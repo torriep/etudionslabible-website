@@ -1,0 +1,11 @@
+Pour utiliser VOTRE propre photo dans le grand bandeau (hero) :
+
+1. Enregistrez votre image dans CE dossier ("assets").
+2. Nommez-la exactement :  hero.jpg
+   (format .jpg ; idéalement large, au moins 2000 pixels de large)
+
+C'est tout. En rouvrant index.html, votre photo remplacera automatiquement
+la photo de remplacement, sans aucune modification du code.
+
+Astuce : pour un beau rendu, choisissez une image horizontale où le ciel
+occupe la partie haute (le titre s'affiche par-dessus).
