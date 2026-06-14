@@ -105,8 +105,8 @@ h2.section-title { font-size: clamp(2rem, 4vw, 3rem); color: var(--indigo); text
           assets/hero.jpg n'existe pas. */
   background-image:
     linear-gradient(to bottom,
-      rgba(22,41,58,0.45) 0%, rgba(22,41,58,0.12) 34%,
-      rgba(22,41,58,0.50) 68%, rgba(22,41,58,0.90) 100%),
+      rgba(20,38,54,0.30) 0%, rgba(20,38,54,0.04) 30%,
+      rgba(20,38,54,0.06) 58%, rgba(20,38,54,0.38) 100%),
     url("assets/hero.jpg"),
     url("https://images.unsplash.com/photo-1742941771749-1b7e0bbcd7f8?q=80&w=2400&auto=format&fit=crop");
   background-size: cover, cover, cover;
@@ -180,8 +180,8 @@ h2.section-title { font-size: clamp(2rem, 4vw, 3rem); color: var(--indigo); text
 
 /* bottom fade for legibility */
 .hero::after {
-  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 45%;
-  background: linear-gradient(to bottom, rgba(10,15,44,0), rgba(10,15,44,0.85) 85%);
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 32%;
+  background: linear-gradient(to bottom, rgba(20,38,54,0), rgba(20,38,54,0.28) 92%);
   z-index: 4;
 }
 
@@ -192,19 +192,20 @@ h2.section-title { font-size: clamp(2rem, 4vw, 3rem); color: var(--indigo); text
   width: 100%;
   padding-top: 90px;
 }
-.hero-content .eyebrow { color: var(--gold-soft); display: inline-block; margin-bottom: 18px; }
+.hero-content .eyebrow { color: var(--gold-warm); display: inline-block; margin-bottom: 18px; text-shadow: 0 1px 16px rgba(20,38,54,0.6), 0 1px 3px rgba(20,38,54,0.5); }
 .hero-content h1 {
   font-size: clamp(2.8rem, 7vw, 5.4rem);
   color: #fff;
-  text-shadow: 0 2px 40px rgba(0,0,0,0.35);
+  text-shadow: 0 2px 30px rgba(20,38,54,0.55), 0 1px 4px rgba(20,38,54,0.45);
   margin-bottom: 18px;
 }
 .hero-content h1 .accent { color: var(--gold-soft); }
 .hero-content .lead {
   font-size: clamp(1.05rem, 2.2vw, 1.4rem);
   max-width: 640px; margin: 0 auto 36px;
-  color: var(--cream-dim);
+  color: #eef3f6;
   font-weight: 300;
+  text-shadow: 0 1px 14px rgba(20,38,54,0.55);
 }
 
 .btn {
