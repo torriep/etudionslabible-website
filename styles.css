@@ -274,7 +274,7 @@ section.block { padding: 96px 0; }
 
 /* auteur */
 .author { background: var(--indigo-deep); color: var(--cream); }
-.author .inner { display: grid; grid-template-columns: 220px 1fr; gap: 48px; align-items: center; max-width: 900px; margin: 0 auto; }
+.author .inner { max-width: 720px; margin: 0 auto; }
 .author .portrait {
   width: 200px; height: 200px; border-radius: 50%; justify-self: center;
   background: radial-gradient(circle at 50% 35%, var(--indigo-soft), var(--indigo-deep));
