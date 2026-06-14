@@ -8,6 +8,13 @@
 
 const ETUDES = [
   {
+    titre: "La repentance",
+    date: "14 juin 2026",
+    categorie: "Étude de mot — Nouveau Testament",
+    extrait: "Pourquoi le grec emploie deux mots — metamelomai (le regret des conséquences) et metanoeō (le changement de cœur) — là où le français n'en a qu'un. Une étude sur ce que l'Évangile entend vraiment par « se repentir ».",
+    fichier: "etudes/la-repentance.html"
+  },
+  {
     titre: "La conscience",
     date: "14 juin 2026",
     categorie: "Étude de mot — Nouveau Testament",
