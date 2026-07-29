@@ -8,6 +8,13 @@
 
 const ETUDES = [
   {
+    titre: "La relation de l'homme avec Dieu et le salut",
+    date: "29 juillet 2026",
+    categorie: "Histoire du salut — de la création aux prophètes",
+    extrait: "La grande fresque biblique, désormais complète : pourquoi la création, la volonté de Dieu envers l'homme, la chute, la foi d'Abel, de Noé, d'Abraham et de Moïse, la voix des prophètes, et le plan du salut accompli en Jésus-Christ.",
+    fichier: "etudes/la-relation-de-l-homme-avec-dieu.html"
+  },
+  {
     titre: "La repentance",
     date: "14 juin 2026",
     categorie: "Étude de mot — Nouveau Testament",

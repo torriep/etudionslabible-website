@@ -355,3 +355,45 @@ section.block { padding: 96px 0; }
   .author .portrait { margin-bottom: 8px; }
   section.block { padding: 70px 0; }
 }
+
+/* ============================================================
+   Étude longue (histoire du salut) — versets, encadrés,
+   chronologies, gloses manuscrites de l'auteur.
+   Ajouté pour « La relation de l'homme avec Dieu ».
+   ============================================================ */
+.article-body .verse {
+  border-left: 3px solid var(--gold-soft); padding: 4px 0 4px 20px; margin: 18px 0;
+  font-family: var(--serif); font-style: italic; font-size: 1.14rem; color: var(--indigo); line-height: 1.5;
+}
+.article-body .verse .ref {
+  display: block; font-family: var(--sans); font-style: normal; font-size: .78rem;
+  color: var(--gold-warm); font-weight: 600; letter-spacing: 1px; margin-top: 6px; text-transform: uppercase;
+}
+/* Glose : clarification que l'auteur avait ajoutée à la main en marge */
+.article-body .glose { color: var(--gold-warm); font-style: italic; }
+/* Encadré de doctrine (ce qui était encadré dans le manuscrit) */
+.article-body .callout {
+  background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--indigo);
+  border-radius: 8px; padding: 20px 26px 6px; margin: 34px 0; box-shadow: 0 2px 14px rgba(20,38,54,.05);
+}
+.article-body .callout h3 { margin-top: 6px; }
+.article-body .callout > h3:first-child { margin-top: 4px; }
+.article-body .callout .tag {
+  display: inline-block; font-family: var(--sans); font-size: .72rem; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-warm); margin-bottom: 2px;
+}
+/* Tableau de chronologie / généalogie */
+.article-body .chrono {
+  width: 100%; border-collapse: collapse; margin: 20px 0 30px;
+  font-family: var(--sans); font-size: .95rem;
+}
+.article-body .chrono th {
+  background: var(--indigo); color: #fff; text-align: left; padding: 8px 12px; font-weight: 600;
+}
+.article-body .chrono td { padding: 7px 12px; border-bottom: 1px solid var(--line); color: #2e2e35; }
+.article-body .chrono tr:nth-child(even) td { background: rgba(20,38,54,.03); }
+.article-body .chrono td:first-child { font-weight: 600; color: var(--indigo); }
+@media (max-width: 600px) {
+  .article-body .chrono { font-size: .85rem; }
+  .article-body .chrono th, .article-body .chrono td { padding: 6px 8px; }
+}
