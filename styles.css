@@ -403,3 +403,15 @@ section.block { padding: 96px 0; }
 }
 .article-body .comments h2 { margin-top: 0; }
 .article-body .comments-intro { color: var(--ink); opacity: .72; font-size: .98rem; margin-bottom: 24px; }
+/* Le widget Cusdis ne redimensionne pas son iframe automatiquement
+   (limite connue du projet, ce n'est pas réparable de notre côté).
+   Hauteur compacte par défaut (juste assez pour le formulaire vide),
+   agrandie au clic sur le bouton "Afficher tous les commentaires". */
+#cusdis_thread iframe { height: 480px !important; transition: height .35s ease; }
+.comments-expand {
+  display: block; margin: 20px auto 0; padding: 10px 24px;
+  background: none; border: 1px solid var(--gold-warm); border-radius: 24px;
+  color: var(--gold-warm); font-family: var(--sans); font-weight: 600; font-size: .9rem;
+  letter-spacing: .3px; cursor: pointer; transition: background .2s, color .2s;
+}
+.comments-expand:hover { background: var(--gold-warm); color: #fff; }
