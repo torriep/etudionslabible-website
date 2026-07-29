@@ -397,3 +397,9 @@ section.block { padding: 96px 0; }
   .article-body .chrono { font-size: .85rem; }
   .article-body .chrono th, .article-body .chrono td { padding: 6px 8px; }
 }
+/* Section commentaires (Cusdis) au bas de chaque étude */
+.article-body .comments {
+  margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--line);
+}
+.article-body .comments h2 { margin-top: 0; }
+.article-body .comments-intro { color: var(--ink); opacity: .72; font-size: .98rem; margin-bottom: 24px; }
