@@ -403,6 +403,11 @@ section.block { padding: 96px 0; }
 }
 .article-body .comments h2 { margin-top: 0; }
 .article-body .comments-intro { color: var(--ink); opacity: .72; font-size: .98rem; margin-bottom: 24px; }
+.article-body .comments-note {
+  color: var(--ink); opacity: .55; font-size: .85rem; font-style: italic;
+  margin: -12px 0 22px;
+}
+.article-body .comments-note em { font-style: normal; font-weight: 600; }
 /* Le widget Cusdis ne redimensionne pas son iframe automatiquement
    (limite connue du projet, ce n'est pas réparable de notre côté).
    Hauteur compacte par défaut (juste assez pour le formulaire vide),
