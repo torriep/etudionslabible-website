@@ -397,26 +397,47 @@ section.block { padding: 96px 0; }
   .article-body .chrono { font-size: .85rem; }
   .article-body .chrono th, .article-body .chrono td { padding: 6px 8px; }
 }
-/* Section commentaires (Cusdis) au bas de chaque étude */
+/* Section commentaires — formulaire "maison" en français,
+   qui appelle directement l'API de Cusdis (plus de widget/iframe). */
 .article-body .comments {
   margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--line);
 }
 .article-body .comments h2 { margin-top: 0; }
-.article-body .comments-intro { color: var(--ink); opacity: .72; font-size: .98rem; margin-bottom: 24px; }
-.article-body .comments-note {
-  color: var(--ink); opacity: .55; font-size: .85rem; font-style: italic;
-  margin: -12px 0 22px;
+.article-body .comments-intro { color: var(--ink); opacity: .72; font-size: .98rem; margin-bottom: 28px; }
+
+.comments-list { margin-bottom: 32px; }
+.comments-loading, .comments-empty {
+  color: var(--ink); opacity: .6; font-size: .95rem; font-style: italic;
 }
-.article-body .comments-note em { font-style: normal; font-weight: 600; }
-/* Le widget Cusdis ne redimensionne pas son iframe automatiquement
-   (limite connue du projet, ce n'est pas réparable de notre côté).
-   Hauteur compacte par défaut (juste assez pour le formulaire vide),
-   agrandie au clic sur le bouton "Afficher tous les commentaires". */
-#cusdis_thread iframe { height: 480px !important; transition: height .35s ease; }
-.comments-expand {
-  display: block; margin: 20px auto 0; padding: 10px 24px;
-  background: none; border: 1px solid var(--gold-warm); border-radius: 24px;
-  color: var(--gold-warm); font-family: var(--sans); font-weight: 600; font-size: .9rem;
-  letter-spacing: .3px; cursor: pointer; transition: background .2s, color .2s;
+.comment-card {
+  background: #fff; border: 1px solid var(--line); border-radius: 10px;
+  padding: 16px 20px; margin-bottom: 14px;
 }
-.comments-expand:hover { background: var(--gold-warm); color: #fff; }
+.comment-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 12px; margin-bottom: 6px; flex-wrap: wrap;
+}
+.comment-name { font-weight: 700; color: var(--indigo); }
+.comment-date { font-size: .8rem; color: var(--gold-warm); font-weight: 600; letter-spacing: .3px; }
+.comment-body { color: #2e2e35; font-size: 1rem; line-height: 1.55; margin: 0; white-space: pre-wrap; }
+
+.comments-form { background: var(--paper-2); border-radius: 12px; padding: 24px; }
+.comments-form-row { display: flex; gap: 20px; margin-bottom: 16px; flex-wrap: wrap; }
+.comments-form-row label, .comments-form-message {
+  display: flex; flex-direction: column; gap: 6px;
+  font-size: .85rem; font-weight: 600; color: var(--indigo); flex: 1; min-width: 200px;
+}
+.comments-form-message { margin-bottom: 18px; }
+.comments-form input, .comments-form textarea {
+  font-family: var(--sans); font-size: .98rem; color: var(--ink); font-weight: 400;
+  border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; background: #fff;
+}
+.comments-form input:focus, .comments-form textarea:focus { outline: none; border-color: var(--gold-warm); }
+.comments-form textarea { resize: vertical; min-height: 100px; }
+.comments-submit { padding: 12px 30px; font-size: .95rem; }
+.comments-status { margin-top: 12px; font-size: .9rem; min-height: 1.2em; }
+.comments-status-ok { color: #2f7d4f; }
+.comments-status-error { color: #b3372c; }
+@media (max-width: 600px) {
+  .comments-form-row { flex-direction: column; gap: 16px; }
+}

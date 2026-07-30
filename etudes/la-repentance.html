@@ -132,20 +132,29 @@
 
         <a class="back-link" href="../etudes.html">Retour aux études</a>
 
-        <div class="comments">
+        <div class="comments" data-app-id="ca55f3c8-d5f9-4e66-abd6-57273927afc3" data-page-id="la-repentance" data-page-url="https://www.etudionslabible.com/etudes/la-repentance.html" data-page-title="La repentance">
           <h2>Vos réflexions</h2>
           <p class="comments-intro">Ce que cette étude vous inspire, vos questions ou vos réactions sont les bienvenus. Un nom suffit ; l'adresse courriel est facultative et ne sera jamais publiée.</p>
-          <p class="comments-note">Le formulaire ci-dessous reste en anglais (limite de l'outil) : <em>Nickname</em> = votre nom, <em>Email (optional)</em> = votre courriel (facultatif), <em>Reply...</em> = votre message, <em>Comment</em> = envoyer.</p>
-          <div id="cusdis_thread"
-            data-host="https://cusdis.com"
-            data-app-id="ca55f3c8-d5f9-4e66-abd6-57273927afc3"
-            data-page-id="la-repentance"
-            data-page-url="https://www.etudionslabible.com/etudes/la-repentance.html"
-            data-page-title="La repentance"
-            data-theme="light"
-          ></div>
-          <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-          <button type="button" class="comments-expand" id="comments-expand-btn">Afficher tous les commentaires ↓</button>
+
+          <div id="comments-list" class="comments-list">
+            <p class="comments-loading">Chargement des commentaires…</p>
+          </div>
+
+          <form id="comments-form" class="comments-form">
+            <div class="comments-form-row">
+              <label>Nom
+                <input type="text" name="nickname" required maxlength="80" placeholder="Votre nom" />
+              </label>
+              <label>Courriel (facultatif)
+                <input type="email" name="email" maxlength="200" placeholder="vous@exemple.com" />
+              </label>
+            </div>
+            <label class="comments-form-message">Votre message
+              <textarea name="content" required maxlength="3000" rows="4" placeholder="Écrivez votre réflexion ici…"></textarea>
+            </label>
+            <button type="submit" class="btn btn-gold comments-submit">Envoyer</button>
+            <p class="comments-status" aria-live="polite"></p>
+          </form>
         </div>
         <script src="../comments.js"></script>
       </div>
